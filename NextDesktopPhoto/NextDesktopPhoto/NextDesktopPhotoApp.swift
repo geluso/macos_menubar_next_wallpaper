@@ -11,21 +11,27 @@ import SwiftUI
 struct NextDesktopPhotoApp: App {
     @State var currentNumber: String = "1"
     
+    let path1 = "./TriggerNextDesktop.scpt"
+    let path2 = "/Users/geluso/Code/next_desktop/TriggerNextDesktop.scpt"
+    let path3 = "/Users/geluso/Code/next_desktop/NextDesktopPhoto/NextDesktopPhoto/TriggerNextDesktop.scpt"
+    let path4 = "/Users/geluso/Library/Application Scripts/-tephen.com.NextDesktopPhoto/TriggerNextDesktop.scpt"
+    
     var body: some Scene {
         MenuBarExtra(currentNumber, systemImage: "\(currentNumber).circle") {
-            Button("./TriggerNextDesktop.scpt") {
-                let path = "./TriggerNextDesktop.scpt"
-                runScript(filename: path)
+            Button(path1) {
+                runScript(filename: path1)
             }
             
-            Button("/Users/geluso/Code/next_desktop/TriggerNextDesktop.scpt") {
-                let path = "/Users/geluso/Code/next_desktop/TriggerNextDesktop.scpt"
-                runScript(filename: path)
+            Button(path2) {
+                runScript(filename: path2)
             }
             
-            Button("/Users/geluso/Code/next_desktop/NextDesktopPhoto/NextDesktopPhoto/TriggerNextDesktop.scpt") {
-                let path = "/Users/geluso/Code/next_desktop/NextDesktopPhoto/NextDesktopPhoto/TriggerNextDesktop.scpt"
-                runScript(filename: path)
+            Button(path3) {
+                runScript(filename: path3)
+            }
+            
+            Button(path4) {
+                runScript(filename: path4)
             }
             
             Button("Bundle.main.path(forResouce: 'TriggerNextDesktop', ofType: 'scpt'") {
