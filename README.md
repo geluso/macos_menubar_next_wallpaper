@@ -10,6 +10,10 @@ every photo is cropped and scaled to show up well as a desktop photo. Instead
 of curating the set of photos I'd like an app that simply allows me to manually
 skip through photos I don't like as desktop wallpapers.
 
+Your wallpaper must be set to show photos from a folder changing them randomly
+on some timestep. See the screenshot of system settings at the end of this
+README.
+
 ## Example
 
 ![Next Wallpaper logo](./sample_small2.gif)
@@ -47,3 +51,7 @@ cp ./TriggerNextDesktop.scpt "/Users/geluso/Library/Application Scripts/-tephen.
 ```
 let path = "/Users/geluso/Library/Application Scripts/-tephen.com.NextDesktopPhoto/TriggerNextDesktop.scpt"
 ```
+
+## Settings
+
+![Next Wallpaper logo](./settings.png)
