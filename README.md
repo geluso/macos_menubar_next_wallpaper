@@ -16,7 +16,7 @@ README.
 
 ## Example
 
-![Next Wallpaper logo](./sample_small2.gif)
+![Next Wallpaper logo](./sample_small.gif)
 
 ## TODO
 
