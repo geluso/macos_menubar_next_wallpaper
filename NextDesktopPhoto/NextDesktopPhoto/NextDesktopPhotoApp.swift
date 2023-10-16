@@ -16,11 +16,11 @@ struct NextDesktopPhotoApp: App {
     var body: some Scene {
         MenuBarExtra(title, systemImage: "photo") {
         //MenuBarExtra(title, image: "NextImage")  {
-            Button(path) {
+            Button("Next Wallpaper (hard-coded)") {
                 runScript(filename: path)
             }
             
-            Button("Bundle.main.path(forResouce: 'TriggerNextDesktop', ofType: 'scpt'") {
+            Button("Next Wallpaper (bundle)") {
                 let path = Bundle.main.path(forResource: "TriggerNextDesktop", ofType: "scpt")
                 runScript(filename: path!)
             }

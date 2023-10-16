@@ -1,5 +1,7 @@
 # Next Wallpaper
 
+![Next Wallpaper logo](./next_desktop_icon_256.png)
+
 This is a menu bar app that triggers changing to the next wallpaper image in
 MacOS.
 
@@ -7,6 +9,10 @@ I have my laptop set up with a directory of hundreds of my favorite photos. Not
 every photo is cropped and scaled to show up well as a desktop photo. Instead
 of curating the set of photos I'd like an app that simply allows me to manually
 skip through photos I don't like as desktop wallpapers.
+
+## Example
+
+![Next Wallpaper logo](./sample_small2.gif)
 
 ## TODO
 
