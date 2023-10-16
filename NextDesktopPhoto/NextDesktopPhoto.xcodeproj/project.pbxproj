@@ -14,8 +14,7 @@
 		9D8303B92ADDCB3700141E7A /* NextDesktopPhotoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8303B82ADDCB3700141E7A /* NextDesktopPhotoTests.swift */; };
 		9D8303C32ADDCB3700141E7A /* NextDesktopPhotoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8303C22ADDCB3700141E7A /* NextDesktopPhotoUITests.swift */; };
 		9D8303C52ADDCB3700141E7A /* NextDesktopPhotoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8303C42ADDCB3700141E7A /* NextDesktopPhotoUITestsLaunchTests.swift */; };
-		9D8303D42ADDCDF600141E7A /* TriggerNextDesktop.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 9D8303D32ADDCDF600141E7A /* TriggerNextDesktop.scpt */; };
-		9D8303D62ADDD2D700141E7A /* TriggerNextDesktop.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 9D8303D52ADDD2D700141E7A /* TriggerNextDesktop.scpt */; };
+		9D8303D82ADDD8E600141E7A /* TriggerNextDesktop.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 9D8303D72ADDD8E600141E7A /* TriggerNextDesktop.scpt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +46,7 @@
 		9D8303BE2ADDCB3700141E7A /* NextDesktopPhotoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NextDesktopPhotoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D8303C22ADDCB3700141E7A /* NextDesktopPhotoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextDesktopPhotoUITests.swift; sourceTree = "<group>"; };
 		9D8303C42ADDCB3700141E7A /* NextDesktopPhotoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextDesktopPhotoUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		9D8303D32ADDCDF600141E7A /* TriggerNextDesktop.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TriggerNextDesktop.scpt; sourceTree = "<group>"; };
-		9D8303D52ADDD2D700141E7A /* TriggerNextDesktop.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TriggerNextDesktop.scpt; sourceTree = "<group>"; };
+		9D8303D72ADDD8E600141E7A /* TriggerNextDesktop.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = TriggerNextDesktop.scpt; path = ../../TriggerNextDesktop.scpt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +97,7 @@
 		9D8303A52ADDCB3700141E7A /* NextDesktopPhoto */ = {
 			isa = PBXGroup;
 			children = (
-				9D8303D32ADDCDF600141E7A /* TriggerNextDesktop.scpt */,
-				9D8303D52ADDD2D700141E7A /* TriggerNextDesktop.scpt */,
+				9D8303D72ADDD8E600141E7A /* TriggerNextDesktop.scpt */,
 				9D8303A62ADDCB3700141E7A /* NextDesktopPhotoApp.swift */,
 				9D8303A82ADDCB3700141E7A /* ContentView.swift */,
 				9D8303AA2ADDCB3700141E7A /* Assets.xcassets */,
@@ -239,10 +236,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D8303D62ADDD2D700141E7A /* TriggerNextDesktop.scpt in Resources */,
 				9D8303AF2ADDCB3700141E7A /* Preview Assets.xcassets in Resources */,
 				9D8303AB2ADDCB3700141E7A /* Assets.xcassets in Resources */,
-				9D8303D42ADDCDF600141E7A /* TriggerNextDesktop.scpt in Resources */,
+				9D8303D82ADDD8E600141E7A /* TriggerNextDesktop.scpt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,12 +413,12 @@
 		9D8303C92ADDCB3700141E7A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = Icon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = NextDesktopPhoto/NextDesktopPhoto.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"NextDesktopPhoto/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "NextDesktopPhoto/TriggerNextDesktop.scpt NextDesktopPhoto/Preview\\ Content";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -453,12 +449,12 @@
 		9D8303CA2ADDCB3700141E7A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = Icon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = NextDesktopPhoto/NextDesktopPhoto.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"NextDesktopPhoto/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "NextDesktopPhoto/TriggerNextDesktop.scpt NextDesktopPhoto/Preview\\ Content";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
