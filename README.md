@@ -1,6 +1,6 @@
 # Next Wallpaper
 
-![Next Wallpaper logo](./next_desktop_icon_256.png)
+![Next Wallpaper logo](./icons/next_desktop_icon_256.png)
 
 This is a menu bar app that triggers changing to the next wallpaper image in
 MacOS.
