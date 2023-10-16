@@ -14,7 +14,7 @@ struct NextDesktopPhotoApp: App {
     let path = "/Users/geluso/Library/Application Scripts/-tephen.com.NextDesktopPhoto/TriggerNextDesktop.scpt"
     
     var body: some Scene {
-        MenuBarExtra(title, systemImage: "1.circle") {
+        MenuBarExtra(title, systemImage: "photo") {
         //MenuBarExtra(title, image: "NextImage")  {
             Button(path) {
                 runScript(filename: path)
@@ -35,14 +35,17 @@ struct NextDesktopPhotoApp: App {
     }
     
     func runScript(filename: String) {
-        do {
-            let url = URL(fileURLWithPath: filename)
-            let task = try NSUserScriptTask(url: url)
-            task.execute(completionHandler: { error in
-                print(error)
-            })
-        } catch {
-            print("Error while loading the script. \(error)\n")
+        Thread {
+            do {
+                let url = URL(fileURLWithPath: filename)
+                let task = try NSUserScriptTask(url: url)
+                task.execute(completionHandler: { error in
+                    print(error)
+                })
+            } catch {
+                print("Error while loading the script. \(error)\n")
+            }
         }
+        .start()
     }
 }
