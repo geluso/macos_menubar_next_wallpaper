@@ -14,8 +14,8 @@ struct NextDesktopPhotoApp: App {
     let path = "/Users/geluso/Library/Application Scripts/-tephen.com.NextDesktopPhoto/TriggerNextDesktop.scpt"
     
     var body: some Scene {
-        MenuBarExtra(title, systemImage: "photo") {
-        //MenuBarExtra(title, image: "NextImage")  {
+        //MenuBarExtra(title, systemImage: "photo") {
+        MenuBarExtra(title, image: "LogoInverted")  {
             Button("Next Wallpaper (hard-coded)") {
                 runScript(filename: path)
             }

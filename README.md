@@ -20,7 +20,6 @@ README.
 
 ## TODO
 
-* Display app icon in menu bar instead of using `systemImage: "photo"`
 * Refer to the `TriggerNextDesktop.scpt` file by bundling it in the application
   instead of hard coding it in my own user path.
 
