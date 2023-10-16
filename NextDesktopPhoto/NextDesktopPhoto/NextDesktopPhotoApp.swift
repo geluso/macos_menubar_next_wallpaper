@@ -9,29 +9,15 @@ import SwiftUI
 
 @main
 struct NextDesktopPhotoApp: App {
-    @State var currentNumber: String = "1"
+    @State var title: String = "Next Wallpaper"
     
-    let path1 = "./TriggerNextDesktop.scpt"
-    let path2 = "/Users/geluso/Code/next_desktop/TriggerNextDesktop.scpt"
-    let path3 = "/Users/geluso/Code/next_desktop/NextDesktopPhoto/NextDesktopPhoto/TriggerNextDesktop.scpt"
-    let path4 = "/Users/geluso/Library/Application Scripts/-tephen.com.NextDesktopPhoto/TriggerNextDesktop.scpt"
+    let path = "/Users/geluso/Library/Application Scripts/-tephen.com.NextDesktopPhoto/TriggerNextDesktop.scpt"
     
     var body: some Scene {
-        MenuBarExtra(currentNumber, systemImage: "\(currentNumber).circle") {
-            Button(path1) {
-                runScript(filename: path1)
-            }
-            
-            Button(path2) {
-                runScript(filename: path2)
-            }
-            
-            Button(path3) {
-                runScript(filename: path3)
-            }
-            
-            Button(path4) {
-                runScript(filename: path4)
+        MenuBarExtra(title, systemImage: "1.circle") {
+        //MenuBarExtra(title, image: "NextImage")  {
+            Button(path) {
+                runScript(filename: path)
             }
             
             Button("Bundle.main.path(forResouce: 'TriggerNextDesktop', ofType: 'scpt'") {
