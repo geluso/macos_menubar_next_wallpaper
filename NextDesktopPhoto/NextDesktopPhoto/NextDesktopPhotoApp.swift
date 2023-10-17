@@ -14,22 +14,8 @@ struct NextDesktopPhotoApp: App {
     let path = "/Users/geluso/Library/Application Scripts/-tephen.com.NextDesktopPhoto/TriggerNextDesktop.scpt"
     
     var body: some Scene {
-        //MenuBarExtra(title, systemImage: "photo") {
         MenuBarExtra(title, image: "LogoInverted")  {
-            Button("Next Wallpaper (hard-coded)") {
-                runScript(filename: path)
-            }
-            
-            Button("Next Wallpaper (bundle)") {
-                let path = Bundle.main.path(forResource: "NextWallpaperScript", ofType: "scpt")
-                runScript(filename: path!)
-            }
-            
-            Button("NSAppleScript('say hello')") {
-                runSayHello()
-            }
-            
-            Button("NSAppleScript(fullScript)") {
+            Button("Next wallpaper") {
                 runFullScript()
             }
             
@@ -42,41 +28,18 @@ struct NextDesktopPhotoApp: App {
         }
     }
     
-    func runScript(filename: String) {
-        Thread {
-            do {
-                let url = URL(fileURLWithPath: filename)
-                let task = try NSUserScriptTask(url: url)
-                task.execute(completionHandler: { error in
-                    print(error)
-                })
-            } catch {
-                print("Error while loading the script. \(error)\n")
-            }
-        }
-        .start()
-    }
-    
-    func runSayHello() {
-        Thread {
-            let src = "say \"hello world\""
-            if let script = NSAppleScript(source: src) {
-                //var error: NSDictionary? = nil
-                var error: NSDictionary? = nil
-                script.executeAndReturnError(&error)
-                if let error = error {
-                    print("Error: \(error)")
-                }
-            }
-        }
-        .start()
-    }
-    
     func runFullScript() {
         Thread {
-            let src = "tell application \"System Events\" \n    display dialog \"Hello from AppleScript!\" \nend tell "
+            let src = """
+                tell application "System Events"
+                    tell current desktop
+                        set initInterval to get change interval
+                        set change interval to initInterval
+                    end tell
+                end tell
+            """
+            
             if let script = NSAppleScript(source: src) {
-                //var error: NSDictionary? = nil
                 var error: NSDictionary? = nil
                 script.executeAndReturnError(&error)
                 if let error = error {
