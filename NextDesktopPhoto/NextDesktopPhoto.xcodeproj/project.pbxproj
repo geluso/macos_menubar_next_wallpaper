@@ -7,15 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9D4B220C2ADE573E003F506C /* NextWallpaperScript.sh in Resources */ = {isa = PBXBuildFile; fileRef = 9D4B220B2ADE573E003F506C /* NextWallpaperScript.sh */; };
 		9D8303A72ADDCB3700141E7A /* NextDesktopPhotoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8303A62ADDCB3700141E7A /* NextDesktopPhotoApp.swift */; };
-		9D8303A92ADDCB3700141E7A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8303A82ADDCB3700141E7A /* ContentView.swift */; };
 		9D8303AB2ADDCB3700141E7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D8303AA2ADDCB3700141E7A /* Assets.xcassets */; };
 		9D8303AF2ADDCB3700141E7A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D8303AE2ADDCB3700141E7A /* Preview Assets.xcassets */; };
-		9D8303B92ADDCB3700141E7A /* NextDesktopPhotoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8303B82ADDCB3700141E7A /* NextDesktopPhotoTests.swift */; };
-		9D8303C32ADDCB3700141E7A /* NextDesktopPhotoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8303C22ADDCB3700141E7A /* NextDesktopPhotoUITests.swift */; };
-		9D8303C52ADDCB3700141E7A /* NextDesktopPhotoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8303C42ADDCB3700141E7A /* NextDesktopPhotoUITestsLaunchTests.swift */; };
-		9D8303D82ADDD8E600141E7A /* TriggerNextDesktop.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 9D8303D72ADDD8E600141E7A /* TriggerNextDesktop.scpt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,19 +30,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9D4B220B2ADE573E003F506C /* NextWallpaperScript.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = NextWallpaperScript.sh; sourceTree = "<group>"; };
 		9D8303A32ADDCB3700141E7A /* NextDesktopPhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NextDesktopPhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D8303A62ADDCB3700141E7A /* NextDesktopPhotoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextDesktopPhotoApp.swift; sourceTree = "<group>"; };
-		9D8303A82ADDCB3700141E7A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		9D8303AA2ADDCB3700141E7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D8303AC2ADDCB3700141E7A /* NextDesktopPhoto.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NextDesktopPhoto.entitlements; sourceTree = "<group>"; };
 		9D8303AE2ADDCB3700141E7A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9D8303B42ADDCB3700141E7A /* NextDesktopPhotoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NextDesktopPhotoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D8303B82ADDCB3700141E7A /* NextDesktopPhotoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextDesktopPhotoTests.swift; sourceTree = "<group>"; };
 		9D8303BE2ADDCB3700141E7A /* NextDesktopPhotoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NextDesktopPhotoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D8303C22ADDCB3700141E7A /* NextDesktopPhotoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextDesktopPhotoUITests.swift; sourceTree = "<group>"; };
-		9D8303C42ADDCB3700141E7A /* NextDesktopPhotoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextDesktopPhotoUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		9D8303D72ADDD8E600141E7A /* TriggerNextDesktop.scpt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = TriggerNextDesktop.scpt; path = ../../TriggerNextDesktop.scpt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +68,6 @@
 			isa = PBXGroup;
 			children = (
 				9D8303A52ADDCB3700141E7A /* NextDesktopPhoto */,
-				9D8303B72ADDCB3700141E7A /* NextDesktopPhotoTests */,
-				9D8303C12ADDCB3700141E7A /* NextDesktopPhotoUITests */,
 				9D8303A42ADDCB3700141E7A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,11 +85,8 @@
 		9D8303A52ADDCB3700141E7A /* NextDesktopPhoto */ = {
 			isa = PBXGroup;
 			children = (
-				9D8303D72ADDD8E600141E7A /* TriggerNextDesktop.scpt */,
 				9D8303A62ADDCB3700141E7A /* NextDesktopPhotoApp.swift */,
-				9D8303A82ADDCB3700141E7A /* ContentView.swift */,
 				9D8303AA2ADDCB3700141E7A /* Assets.xcassets */,
-				9D4B220B2ADE573E003F506C /* NextWallpaperScript.sh */,
 				9D8303AC2ADDCB3700141E7A /* NextDesktopPhoto.entitlements */,
 				9D8303AD2ADDCB3700141E7A /* Preview Content */,
 			);
@@ -116,23 +99,6 @@
 				9D8303AE2ADDCB3700141E7A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		9D8303B72ADDCB3700141E7A /* NextDesktopPhotoTests */ = {
-			isa = PBXGroup;
-			children = (
-				9D8303B82ADDCB3700141E7A /* NextDesktopPhotoTests.swift */,
-			);
-			path = NextDesktopPhotoTests;
-			sourceTree = "<group>";
-		};
-		9D8303C12ADDCB3700141E7A /* NextDesktopPhotoUITests */ = {
-			isa = PBXGroup;
-			children = (
-				9D8303C22ADDCB3700141E7A /* NextDesktopPhotoUITests.swift */,
-				9D8303C42ADDCB3700141E7A /* NextDesktopPhotoUITestsLaunchTests.swift */,
-			);
-			path = NextDesktopPhotoUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,8 +207,6 @@
 			files = (
 				9D8303AF2ADDCB3700141E7A /* Preview Assets.xcassets in Resources */,
 				9D8303AB2ADDCB3700141E7A /* Assets.xcassets in Resources */,
-				9D8303D82ADDD8E600141E7A /* TriggerNextDesktop.scpt in Resources */,
-				9D4B220C2ADE573E003F506C /* NextWallpaperScript.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,7 +231,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D8303A92ADDCB3700141E7A /* ContentView.swift in Sources */,
 				9D8303A72ADDCB3700141E7A /* NextDesktopPhotoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,7 +239,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D8303B92ADDCB3700141E7A /* NextDesktopPhotoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,8 +246,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D8303C32ADDCB3700141E7A /* NextDesktopPhotoUITests.swift in Sources */,
-				9D8303C52ADDCB3700141E7A /* NextDesktopPhotoUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

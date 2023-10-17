@@ -11,8 +11,6 @@ import SwiftUI
 struct NextDesktopPhotoApp: App {
     @State var title: String = "Next Wallpaper"
     
-    let path = "/Users/geluso/Library/Application Scripts/-tephen.com.NextDesktopPhoto/TriggerNextDesktop.scpt"
-    
     var body: some Scene {
         MenuBarExtra(title, image: "LogoInverted")  {
             Button("Next wallpaper") {
