@@ -12,7 +12,7 @@ struct NextDesktopPhotoApp: App {
     @State var title: String = "Next Wallpaper"
     
     var body: some Scene {
-        MenuBarExtra(title, image: "LogoInverted")  {
+        MenuBarExtra(title, image: "MenuBarIcon")  {
             Button("Next wallpaper") {
                 runFullScript()
             }
