@@ -30,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9D4CE40C2ADF25B600FAF4F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9D8303A32ADDCB3700141E7A /* NextDesktopPhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NextDesktopPhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D8303A62ADDCB3700141E7A /* NextDesktopPhotoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextDesktopPhotoApp.swift; sourceTree = "<group>"; };
 		9D8303AA2ADDCB3700141E7A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -85,6 +86,7 @@
 		9D8303A52ADDCB3700141E7A /* NextDesktopPhoto */ = {
 			isa = PBXGroup;
 			children = (
+				9D4CE40C2ADF25B600FAF4F4 /* Info.plist */,
 				9D8303A62ADDCB3700141E7A /* NextDesktopPhotoApp.swift */,
 				9D8303AA2ADDCB3700141E7A /* Assets.xcassets */,
 				9D8303AC2ADDCB3700141E7A /* NextDesktopPhoto.entitlements */,
@@ -387,7 +389,7 @@
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = NextWallpaper;
+				INFOPLIST_FILE = NextDesktopPhoto/Info.plist;
 				INFOPLIST_KEY_LSUIElement = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -428,7 +430,7 @@
 				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = NextWallpaper;
+				INFOPLIST_FILE = NextDesktopPhoto/Info.plist;
 				INFOPLIST_KEY_LSUIElement = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
