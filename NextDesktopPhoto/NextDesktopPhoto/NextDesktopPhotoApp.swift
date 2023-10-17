@@ -26,7 +26,11 @@ struct NextDesktopPhotoApp: App {
             }
             
             Button("NSAppleScript('say hello')") {
-                runAppleScript()
+                runSayHello()
+            }
+            
+            Button("NSAppleScript(fullScript)") {
+                runFullScript()
             }
             
             Divider()
@@ -53,10 +57,24 @@ struct NextDesktopPhotoApp: App {
         .start()
     }
     
-    func runAppleScript() {
+    func runSayHello() {
+        Thread {
+            let src = "say \"hello world\""
+            if let script = NSAppleScript(source: src) {
+                //var error: NSDictionary? = nil
+                var error: NSDictionary? = nil
+                script.executeAndReturnError(&error)
+                if let error = error {
+                    print("Error: \(error)")
+                }
+            }
+        }
+        .start()
+    }
+    
+    func runFullScript() {
         Thread {
             let src = "tell application \"System Events\" \n    display dialog \"Hello from AppleScript!\" \nend tell "
-            print(src)
             if let script = NSAppleScript(source: src) {
                 //var error: NSDictionary? = nil
                 var error: NSDictionary? = nil
