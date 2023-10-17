@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D4B220C2ADE573E003F506C /* NextWallpaperScript.sh in Resources */ = {isa = PBXBuildFile; fileRef = 9D4B220B2ADE573E003F506C /* NextWallpaperScript.sh */; };
 		9D8303A72ADDCB3700141E7A /* NextDesktopPhotoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8303A62ADDCB3700141E7A /* NextDesktopPhotoApp.swift */; };
 		9D8303A92ADDCB3700141E7A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8303A82ADDCB3700141E7A /* ContentView.swift */; };
 		9D8303AB2ADDCB3700141E7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D8303AA2ADDCB3700141E7A /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9D4B220B2ADE573E003F506C /* NextWallpaperScript.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = NextWallpaperScript.sh; sourceTree = "<group>"; };
 		9D8303A32ADDCB3700141E7A /* NextDesktopPhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NextDesktopPhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D8303A62ADDCB3700141E7A /* NextDesktopPhotoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextDesktopPhotoApp.swift; sourceTree = "<group>"; };
 		9D8303A82ADDCB3700141E7A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				9D8303A62ADDCB3700141E7A /* NextDesktopPhotoApp.swift */,
 				9D8303A82ADDCB3700141E7A /* ContentView.swift */,
 				9D8303AA2ADDCB3700141E7A /* Assets.xcassets */,
+				9D4B220B2ADE573E003F506C /* NextWallpaperScript.sh */,
 				9D8303AC2ADDCB3700141E7A /* NextDesktopPhoto.entitlements */,
 				9D8303AD2ADDCB3700141E7A /* Preview Content */,
 			);
@@ -239,6 +242,7 @@
 				9D8303AF2ADDCB3700141E7A /* Preview Assets.xcassets in Resources */,
 				9D8303AB2ADDCB3700141E7A /* Assets.xcassets in Resources */,
 				9D8303D82ADDD8E600141E7A /* TriggerNextDesktop.scpt in Resources */,
+				9D4B220C2ADE573E003F506C /* NextWallpaperScript.sh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

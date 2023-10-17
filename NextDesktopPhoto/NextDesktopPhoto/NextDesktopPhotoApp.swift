@@ -21,8 +21,12 @@ struct NextDesktopPhotoApp: App {
             }
             
             Button("Next Wallpaper (bundle)") {
-                let path = Bundle.main.path(forResource: "TriggerNextDesktop", ofType: "scpt")
+                let path = Bundle.main.path(forResource: "NextWallpaperScript", ofType: "scpt")
                 runScript(filename: path!)
+            }
+            
+            Button("NSAppleScript('say hello')") {
+                runAppleScript()
             }
             
             Divider()
@@ -44,6 +48,22 @@ struct NextDesktopPhotoApp: App {
                 })
             } catch {
                 print("Error while loading the script. \(error)\n")
+            }
+        }
+        .start()
+    }
+    
+    func runAppleScript() {
+        Thread {
+            let src = "tell application \"System Events\" \n    display dialog \"Hello from AppleScript!\" \nend tell "
+            print(src)
+            if let script = NSAppleScript(source: src) {
+                //var error: NSDictionary? = nil
+                var error: NSDictionary? = nil
+                script.executeAndReturnError(&error)
+                if let error = error {
+                    print("Error: \(error)")
+                }
             }
         }
         .start()

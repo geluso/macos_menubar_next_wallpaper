@@ -1,5 +1,11 @@
 #!/usr/bin/osascript
 
+#  NextWallpaperScript.sh
+#  NextDesktopPhoto
+#
+#  Created by Stephen Geluso on 10/16/23.
+#  
+
 say "hello"
 
 tell application "System Events"
